@@ -1,5 +1,3 @@
-
-
 function criptografar() {
     let textArea = document.getElementById("texto").value
 
@@ -64,7 +62,6 @@ function criptografar() {
 }
 
 function descriptografar() {
-
     let textArea = document.getElementById("texto").value
 
     if (!/^[a-z\s.,!?]+$/i.test(textArea) || /[A-ZÀ-ÚÂ-ÛÄ-Ü]/.test(textArea)) {
