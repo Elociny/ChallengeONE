@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONE | Challenge</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="conteudo">
+        <section class="left">
+            <img class="alura" src="./src/img/alura.png" alt="Logo da Alura">
+
+            <textarea name="texto" id="texto" cols="30" rows="10" placeholder="Digite seu texto..."></textarea>
+            
+            <div class="acao">
+                <p id="mensagemErro" hidden>Por favor digite caracteres válidos!</p>
+                <p class="atencao">&#9888; Apenas letras minúsculas e sem acento.</p>
+                <div class="btns">
+                    <button id="criptografar" class="criptografar" onclick="criptografar()">Criptografar</button>
+                    <button id="descriptografar" class="descriptografar" onclick="descriptografar()">Descriptografar</button>
+                </div>
+            </div>
+        </section>
+        
+        <div class="resp">
+            <img class="garota" id="garota" src="./src/img/garota.svg"
+            alt="Desenho de uma garota com uma lupa olhando um diamânte flutuante">
+            
+            <h2 class="subtitulo" id="subtitulo">Nenhuma mensagem encontrada</h2>
+            
+            <p class="paragrafo" id="paragrafo">Digite um texto que você deseja criptografar ou descriptografar.</p>
+
+            <textarea name="resposta" hidden id="resposta" cols="30" rows="10"></textarea>
+            
+            <button onclick="copiarTexto()" hidden id="copiar">Copiar</button>
+        </div>
+    </main>
+
+    <footer class="rodaPe">
+        <p>Desenvolvido por Nicole | Projeto ONE T6</p>
+
+        <div class="redesSociais">
+            <a href="https://www.linkedin.com/in/nicolelinscoelho" target="_blank" class="rede">
+                <img src="./src/img/linkedin.png" alt="Logo do LinkedIn">
+                <p>LinkedIn</p>
+            </a>
+
+            <a href="https://github.com/Elociny" target="_blank" class="rede">
+                <img src="./src/img/github.png" alt="Logo do GitHub">
+                <p>GitHub</p>
+            </a>
+        </div>
+    </footer>
+
+    <!-- SCRIPT -->
+    <script src="./src/js/script.js"></script>
+</body>
+
+</html>
