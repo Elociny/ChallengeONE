@@ -35,9 +35,9 @@ function criptografar() {
         // a vogal "a" não pode ser a primeira da lista se não da erro
         textArea = textArea.replace(/e/g, "enter")
         textArea = textArea.replace(/i/g, "imes")
+        textArea = textArea.replace(/a/g, "ai")
         textArea = textArea.replace(/o/g, "ober")
         textArea = textArea.replace(/u/g, "ufta")
-        textArea = textArea.replace(/a/g, "ai")
     }
 
     // tira as informações
@@ -96,9 +96,9 @@ function descriptografar() {
     } else {
         textArea = textArea.replace(/enter/g, "e")
         textArea = textArea.replace(/imes/g, "i")
+        textArea = textArea.replace(/ai/g, "a")
         textArea = textArea.replace(/ober/g, "o")
         textArea = textArea.replace(/ufta/g, "u")
-        textArea = textArea.replace(/ai/g, "a")
     }
 
     // tira as informações
